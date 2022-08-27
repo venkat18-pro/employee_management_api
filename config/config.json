@@ -1,0 +1,40 @@
+{
+    "config": {
+        "serverConfig": {
+            "port": 3000
+        },
+        "dbConfig": {
+            "host": "localhost",
+            "user": "root",
+            "password": "VENKat18@",
+            "database": "mynode"
+        },
+        "routes": {
+            "user": {
+                "userLogin": "/login", 
+                "userList": "/userlist",
+                "userGetOneList": "/userID",
+                "userAdd": "/add",
+                "userUpdate": "/update",
+                "userDelete": "/delete"
+            },
+            "manager": {
+                "managerList": "/managerlist",
+                "managerGetOneList": "/managerID/:id",
+                "managerAdd": "/add",
+                "managerUpdate": "/update",
+                "managerDelete": "/delete/:id",
+                "managerUserBasedList": "/userbasedlist"
+            },
+            "employee": {
+                "employeeList": "/employeelist",
+                "employeeGetOneList": "/employeeID/:id",
+                "employeeAdd": "/add",
+                "employeeUpdate": "/update",
+                "employeeDelete": "/delete/:id",
+                "employeeManagerBasedList": "/managerbasedlist",
+                "employeeUserBasedList": "/userbasedlist"
+            }
+        }
+    }
+}
